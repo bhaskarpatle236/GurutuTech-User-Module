@@ -8,5 +8,6 @@ public interface GurutuTechUserService {
 	
 	public int saveUsers(List<GurutuTechUserEntity> gurutuTechUserEntity);
 	public GurutuTechUserEntity getUser(Integer userId);
+	public List<GurutuTechUserEntity> getAllUSer();
 
 }

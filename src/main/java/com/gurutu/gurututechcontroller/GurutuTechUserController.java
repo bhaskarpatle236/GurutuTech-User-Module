@@ -47,4 +47,14 @@ public class GurutuTechUserController {
 		return null;
 		
 	}
+	
+	@GetMapping("/getAllData")
+	private ResponseEntity<List<GurutuTechUserEntity>> getAllUSer()
+	
+	{
+		List<GurutuTechUserEntity> entities=gts.getAllUSer();
+		
+		return new ResponseEntity<List<GurutuTechUserEntity>>(entities, HttpStatus.CREATED);
+		
+	}
 }

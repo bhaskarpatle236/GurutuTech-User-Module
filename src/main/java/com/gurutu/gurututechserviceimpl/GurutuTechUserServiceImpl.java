@@ -29,4 +29,10 @@ public class GurutuTechUserServiceImpl implements GurutuTechUserService {
 		return gt;
 	}
 
+	@Override
+	public List<GurutuTechUserEntity> getAllUSer() {
+		List<GurutuTechUserEntity> gt1=gtr.findAll();
+		return gt1;
+	}
+
 }
